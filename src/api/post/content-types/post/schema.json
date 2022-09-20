@@ -72,6 +72,27 @@
       "relation": "oneToMany",
       "target": "api::category.category",
       "mappedBy": "posts"
+    },
+    "blocks": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "blocks.buttons",
+        "blocks.cta",
+        "blocks.faq",
+        "blocks.features",
+        "blocks.hero"
+      ]
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "posts"
     }
   }
 }
