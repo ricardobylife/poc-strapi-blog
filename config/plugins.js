@@ -14,6 +14,10 @@ module.exports = () => {
             field: "slug",
             references: "title",
           },
+          category: {
+            field: "slug",
+            references: "title",
+          },
         },
       },
     },
